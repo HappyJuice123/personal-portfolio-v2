@@ -1,0 +1,291 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main {
+  flex-grow: 1 !important;
+  min-width: 300px !important;
+}
+
+.navbar-bg {
+  background-color: #1b273e;
+  color: white;
+  min-width: 300px !important;
+  border-bottom: 2px white solid;
+}
+
+.icon {
+  height: 1.5em;
+}
+
+.avatar {
+  max-height: 200px !important;
+}
+
+.project-card {
+  background-image: linear-gradient(to top right, #2b3d60, #1b273e);
+  max-width: 500px !important;
+  cursor: pointer !important;
+  min-width: 300px !important;
+  margin: 20px 20px !important;
+}
+
+.project-card:hover {
+  background-image: linear-gradient(to bottom left, #2b3d60, #1b273e);
+  box-shadow: 0 0 4px;
+}
+
+.project-link {
+  height: 100% !important;
+}
+
+.single-project {
+  max-width: 800px;
+}
+
+.single-project-img {
+  max-height: 500px;
+}
+
+.project-img {
+  max-height: 300px;
+}
+
+.projects-section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 2000px;
+  justify-content: center;
+}
+
+.footer {
+  min-height: 50px;
+  border-top: 2px solid white;
+  min-width: 300px !important;
+}
+
+.footer-icon {
+  height: 1.3em !important;
+}
+
+.footer-credit:hover {
+  color: #dcdcdc !important;
+}
+
+.footer-content {
+  margin-bottom: 0em;
+}
+
+.project-description {
+  text-align: justify;
+}
+
+.tech-icon {
+  height: 60px !important;
+  width: 60px !important;
+  padding: 6px !important;
+}
+
+.tech-icon-section {
+  max-width: 600px !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tech-text {
+  font-size: 0.8rem;
+  margin-top: -1em;
+}
+
+.message-input {
+  width: 100%;
+  min-height: 150px;
+  max-height: 300px;
+  max-width: 500px;
+}
+
+#email,
+#form-name {
+  width: 100%;
+  max-width: 500px;
+}
+
+.form {
+  min-width: 500px;
+  width: 25%;
+}
+
+@media only screen and (max-width: 630px) {
+  .form {
+    min-width: 350px;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  .form {
+    min-width: 300px;
+    overflow: auto !important;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 350px) {
+  .form {
+    min-width: 300px;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .contact-page {
+    min-width: 300px !important;
+    overflow-x: auto !important;
+  }
+}
+
+.message-submitted {
+  text-align: justify;
+}
+
+button {
+  width: 150px;
+  height: 35px;
+  background-color: white;
+  color: black !important;
+  border: 0px;
+  font-weight: bolder !important;
+}
+
+button:hover {
+  background-color: #dcdcdc;
+}
+
+.button-text {
+  vertical-align: middle !important;
+  color: black !important;
+}
+
+.contact {
+  min-width: 500px;
+  width: 25%;
+}
+
+input {
+  border: 0px !important;
+  border-bottom: 1px white double !important;
+  background-color: transparent;
+  color: white !important;
+  cursor: text !important;
+}
+
+textarea {
+  background-color: transparent !important;
+  border: 1px white double;
+  color: white !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-text:hover {
+  font-weight: 900 !important;
+}
+
+.navbar-active {
+  font-weight: 900 !important;
+}
+
+.home-description {
+  text-align: justify;
+  max-width: 800px;
+}
+
+.timeline {
+  color: black !important;
+}
+
+.text {
+  text-align: justify;
+}
+
+.vertical-timeline-element-content {
+  background-color: rgb(239, 239, 239) !important;
+  box-shadow: 0 0.1em 0.1em 0 white, 0 0.1em 0.3em 0 white !important;
+  padding: 2.5em 3.5em !important;
+  min-height: 150px !important;
+  border-radius: 1em !important;
+}
+
+.vertical-timeline-element-title {
+  text-align: left !important;
+}
+
+.vertical-timeline-element-date {
+  text-align: justify;
+}
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline-element-date {
+    color: white !important;
+  }
+  .timeline-work-icon {
+    padding-top: 0.2rem !important;
+    height: 60% !important;
+  }
+
+  .timeline-school-icon {
+    padding-top: 0.7rem !important;
+    height: 80% !important;
+  }
+}
+
+.about-description {
+  text-align: justify;
+  max-width: 800px;
+}
+
+.link {
+  cursor: pointer;
+}
